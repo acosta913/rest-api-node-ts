@@ -5,7 +5,7 @@ export const getProducts = async (req: Request, res: Response) => {
   try {
     const products = await Product.findAll({
       order: [["id", "DESC"]],
-      limit: 2,
+      limit: 10,
       attributes: { exclude: ["createdAt", "updatedAt"] },
     });
     res.json({ data: products });
