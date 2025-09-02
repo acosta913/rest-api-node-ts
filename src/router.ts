@@ -65,4 +65,5 @@ router.delete(
   handleInputErrors,
   deleteProduct
 );
+
 export default router;
